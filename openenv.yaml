@@ -1,0 +1,4 @@
+# openenv.yaml
+name: "code-security-env"
+version: "1.0.0"
+description: "A production-grade OpenEnv reinforcement learning environment for Automated Code Security Review. Agents act as cybersecurity auditors to identify, categorize, and remediate vulnerabilities in source code."
