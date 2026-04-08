@@ -2,7 +2,7 @@
 import re
 from pydantic import BaseModel
 from typing import Dict, Tuple
-from models import ReviewAction
+from server.models import ReviewAction
 
 class DeterministicGrader:
     def __init__(self, task_data: Dict):
@@ -80,7 +80,7 @@ class DeterministicGrader:
 
 # --- EXECUTION TEST ---
 if __name__ == "__main__":
-    from tasks import TASKS_DB # Assuming the dict above is in tasks.py
+    from server.tasks import TASKS_DB # Assuming the dict above is in tasks.py
     
     # 1. Load the hard task (SQL Injection)
     hard_task_data = TASKS_DB["hard"]

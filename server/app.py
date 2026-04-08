@@ -4,9 +4,9 @@ import uvicorn
 from fastapi import FastAPI, HTTPException
 from pydantic import ValidationError
 
-from models import ReviewAction, ReviewObservation, ReviewState, StepResult
-from tasks import TASKS_DB
-from grader import DeterministicGrader
+from server.models import ReviewAction, ReviewObservation, ReviewState, StepResult
+from server.tasks import TASKS_DB
+from server.grader import DeterministicGrader
 
 # --- 1. THE CORE ENVIRONMENT STATE MACHINE ---
 class CodeSecurityEnv:
