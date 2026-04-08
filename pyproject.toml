@@ -21,3 +21,5 @@ dependencies = [
 # This tells the auto-grader exactly where your server lives!
 [project.scripts]
 server = "server.app:app"
+[project.scripts]
+server = "server.app:main"

@@ -108,3 +108,14 @@ async def api_state():
 if __name__ == "__main__":
     print("🚀 Booting up the OpenEnv Server...")
     uvicorn.run(app, host="0.0.0.0", port=8000)
+
+import uvicorn
+
+# ... (all your existing endpoint code stays exactly where it is) ...
+
+def main():
+    """Entry point for the multi-mode deployment server."""
+    uvicorn.run("server.app:app", host="0.0.0.0", port=7860)
+
+if __name__ == "__main__":
+    main()
