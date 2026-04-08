@@ -14,5 +14,10 @@ dependencies = [
     "pydantic",
     "python-dotenv",
     "openai",
-    "requests"
+    "requests",
+    "openenv-core>=0.2.0" 
 ]
+
+# This tells the auto-grader exactly where your server lives!
+[project.scripts]
+server = "server.app:app"

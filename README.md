@@ -36,5 +36,5 @@ Upon stepping, the environment returns:
 The environment is securely containerized and hosted live. You can connect your training scripts directly to the cloud instance:
 ```python
 # In your inference script
-ENV_URL = "https://[Your HF Username]-code-security-env.hf.space"
+ENV_URL = "https://vinayakchopra68-code-security-env.hf.space"
 requests.post(f"{ENV_URL}/reset?difficulty=hard")

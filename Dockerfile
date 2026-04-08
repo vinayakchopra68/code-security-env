@@ -15,4 +15,4 @@ COPY . .
 EXPOSE 7860
 
 # 6. The command to boot up your FastAPI server when the container starts
-CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "7860"]
+CMD ["uvicorn", "server.app:app", "--host", "0.0.0.0", "--port", "7860"]
