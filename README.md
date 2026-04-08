@@ -1,3 +1,13 @@
+---
+title: Code Security Env
+emoji: 😻
+colorFrom: blue
+colorTo: blue
+sdk: docker
+pinned: false
+license: mit
+---
+
 # 🛡️ OpenEnv: Automated Code Security Review
 
 An OpenEnv-compliant, production-grade reinforcement learning environment that simulates a real-world cybersecurity auditing workflow. 
